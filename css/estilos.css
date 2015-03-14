@@ -1,14 +1,18 @@
-/*Color del campo cuando se ha puesto un valor que es requerido */
-[required]{
-	border-color: green;
-	box-shadow: 0px 0px 2px green;
+*{
+	margin: 0px;
+	padding: 0px;
 }
 
-/*Colo cuando un campo es requierido y su valor no es válido */
-:invalid{
-	border-color: red;
-	box-shadow: 0px 0px 2px red;
+@font-face{
+	font-family: 'udec';
+	src: url('fonts/DragonNight.otf');
+
 }
+
+
+
+
+
 body{
 	/* Fondo Degradado
 	background: radial-gradient(center,rgba(200,0,0,0.3) 0%, rgba(0,0,200,0.3) 100%);
@@ -19,59 +23,80 @@ body{
 	background: url('../img/fondo.jpg') no-repeat;
 	background-size: 100% 100%;*/
 	/*Fondo inicia, fondo secundario*/
-	background-image:url('../img/shot.png'), url('../img/gamer.jpg');
+	background-image:url('../img/shot.png'), url('../img/font.jpg');
 	/*Posición de la primra imagen, de la segunda imagen */
 	background-position: right right, right right;	
 	background-repeat: no-repeat, repeat;
 	color: black;
+	font-family: :'udec','Verdana',cursive;
+	font-size: 1em;
+	cursor: url('img/lapiz.gif'), url('img/cursor.cur'),help;
 	
+}
+h1{
+	color: white;
+	font-family: 'udec','Verdana',cursive;
+	font-size: 7em;
+}
+h2{
+	color: white;
+	font-family: 'udec','Verdana',cursive;
+	font-size: 5em;
+}
+p{
+	font-size: 3em;
+	color:grey;
+	font-family: 'chiller','Verdana',cursive;
+	text-align: justify;
+
 }
 
 header
 {
 
-	color: #509bfc;
-	text-shadow: 2px 3px 5px white;
+	color: white;
 	width: 400px;	
 	position: center;
 	width: 700px;
-  	font-family: "Comic Sans MS";
+  	font-family: 'udec''arial',cursive;
+  	border: red;
 }
+
+
 
 .menu li
 {
 	display: inline-block;
 	background-color: black;
-	color: red;
 	text-decoration: none;
 	padding: 10px 15px; 
 	line-height: 35px; /*Superior*/
 	list-style: none; /*Decoración */
 	margin: 0 5px;
+	font-family: 'chiller''arial',cursive;
+	font-size: 2em;
 }
 .menu li:hover{
-	background-color: #434343;
+	background-color: grey;
+	
 }
 .menu li a
 {
 	text-decoration:none;
-	color: #509bfc; 
+	color: white; 
 }
-.menu li:hover{border-bottom:#509bfc solid 2px ;}
+.menu li:hover{border-bottom:black solid 2px ;
+}
 
 .menu li ul
 {
 	display: none;
 	position: absolute;
 	min-height: 140px;
+	
+
 }
 .menu li:hover ul {
 	display: block;
-}
-.text1
-{
-	color: blue;
-	text-align: justify;
-	font-family: "Comic Sans MS";
 	
 }
